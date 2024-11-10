@@ -9,6 +9,7 @@
     "lint": "eslint src"
   },
   "devDependencies": {
+    "@faker-js/faker": "^9.2.0",
     "@stylistic/eslint-plugin": "^2.6.4",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
@@ -29,6 +30,7 @@
     "dotenv": "^16.4.5",
     "express": "^5.0.1",
     "helmet": "^8.0.0",
+    "http-status-codes": "^2.3.0",
     "morgan": "^1.10.0",
     "zod": "^3.23.8"
   }

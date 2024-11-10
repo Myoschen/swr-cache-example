@@ -4,6 +4,7 @@ import helmet from 'helmet'
 import morgan from 'morgan'
 
 import { env } from './env'
+import { userRouter } from './user'
 
 const app = express()
 const port = env.EXPRESS_PORT
@@ -16,9 +17,7 @@ app.use(express.json())
 app.use(morgan('dev'))
 
 // routes
-app.get('/', (_req, res) => {
-  res.status(200).send({ message: 'Hello World' })
-})
+app.use('/users', userRouter)
 
 const server = app.listen(port, () => {
   console.log(`App listening on http://localhost:${port}`)
